@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>한우 농장 30년</title>
+  <meta charset="utf-8">
+</head>
+
+
+   <style>
+      .jb-red {
+        color: red;
+      }
+      h3 {text-align:right;}
+    </style>
+    <style>
+      body{ background-color: #F7FFF5;}
+      div { padding: 10px; }
+      /* 본문 내 이미지 요소의 'float' 속성을 'left'로 지정 */
+      img.left { 
+        float: right;
+      }
+      /* <img> 태그의 다음에 나오는 <p>에서 'float' 속성을 완전히 해제. 이로 인해 ①에서 지정한 'float' 속성도 함께 강제로 해제 되므로 이미지 다음 줄에 단락이 위치 */
+      p { 
+       clear: right;
+     }
+
+    </style>
+
+
+
+<body>
+
+  <h1 class="jb-red">한우 농장 30년</h1> //본 집합체 돌아가기 및 가고 오기//   
+ <ol>
+  <li><a href="1.html">한우 가격</a></li>
+  <li><a href="2.html">지원 구성도<a/></li>
+  <li><a href="3.html">하이퍼텍스트와 속성</a></li>
+  <li><a href="4.html">리스트와 태그의 중첩</a></li>
+ </ol>
+ 
+ 
+
+<h2>한우 가격</h2>
+ 
+ 
+ 등심   40000원<br>
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="starry_night.jpg "  width="200" height="100" border="3"> 
+    <div class="numbertext">1 / 3</div>
+    
+</div>
+
+<div class="mySlides fade">
+  <img src="img_schoolbell.jpg" width="200" height="100" border="3">
+  <div class="numbertext">2 / 3</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="still_life_with_kettle.jpg" width="200" height="100" border="3">
+  <div class="numbertext">3 / 3</div>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+ 
+ 안심   40000원<br>------------------2
+ <div>
+ <img name="ig" src="img_hare.jpg" width="200" height="100" border="3"> 
+ </div>
+
+
+ 부채살  40000원<br>
+<div>
+ <img name="ig" src="img_hare.jpg" width="200" height="100" border="3"> 
+ </div>
+
+ 부채살  40000원<br>
+<div>
+ <img name="ig" src="img_hare.jpg" width="200" height="100" border="3"> 
+ </div>
+
+
+
+
+
+<script type="text/javascript">
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
+
+
+  var slideIndex = 0;
+showSlides();
+
+
+</script>
+<div id = "content">
+</body>
+</html>
